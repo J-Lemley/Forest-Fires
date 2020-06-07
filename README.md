@@ -57,7 +57,7 @@ create_boxplots <- function(x, y) {
     theme(panel.background = element_rect(fill = "white"))
 }
 
-# Assign x and y variable names
+#Assign x and y variable names
 
 x_var_month <- names(forest_fires)[3]
 x_var_day <- names(forest_fires)[4]
@@ -77,12 +77,12 @@ create_scatterplots = function(x, y) {
     theme(panel.background = element_rect(fill = "white"))
 }
 
-## Assign x and y variable names 
+#Assign x and y variable names 
 
 x_var_scatter <- names(forest_fires)[5:12]
 y_var_scatter <- names(forest_fires)[13]
 
-## use the map() function to apply the function to the variables of interest
+#use the map() function to apply the function to the variables of interest
 
 scatters <- map2(x_var_scatter, y_var_scatter, create_scatterplots)
 ```
